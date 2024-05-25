@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs - University of Birmingham Dubai</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        h1 {
+            color: #1e73be;
+            text-align: center;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .program {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .program:hover {
+            transform: translateY(-10px);
+        }
+
+        .program h2 {
+            color: #1e73be;
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+
+        .program p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .program img {
+            display: block;
+            margin: 0 auto 15px;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .program strong {
+            color: #333;
+        }
+
+        .program:nth-child(1) {
+            background: linear-gradient(145deg, #ffffff, #e6e6e6);
+        }
+
+        .program:nth-child(2) {
+            background: linear-gradient(145deg, #f0f8ff, #d6e4f2);
+        }
+
+        .program:nth-child(3) {
+            background: linear-gradient(145deg, #f5f5dc, #e2e2c3);
+        }
+
+        .program:nth-child(4) {
+            background: linear-gradient(145deg, #fdf5e6, #f2e4c2);
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #00457C;
+            padding: 10px 20px;
+            justify-content: center;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .menu-toggle img {
+            height: 30px;
+        }
+
+        .nav-items {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-item a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-item a:hover {
+            background-color: #002A50;
+            border-radius: 5px;
+        }
+
+        .contact-btn {
+            background-color: #FFCC00;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .contact-btn:hover {
+            background-color: #CC9900;
+        }
+
+        @media (max-width: 768px) {
+            .nav-items {
+                display: none;
+                flex-direction: column;
+                gap: 0;
+                background-color: #00457C;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+            }
+
+            .nav-items.active {
+                display: flex;
+            }
+
+            .nav-item {
+                text-align: center;
+                padding: 10px 0;
+                border-top: 1px solid #002A50;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="images/default-logo.png" alt="University of Birmingham Dubai Logo">
+                </a>
+            </div>
+            <button class="menu-toggle" aria-label="Menu Toggle">
+                <img src="images/images.png" alt="Menu">
+            </button>
+            <div class="nav-items">
+                <div class="nav-item"><a href="index.html">Home</a></div>
+                <div class="nav-item"><a href="about.html">About Us</a></div>
+                <div class="nav-item"><a href="programs.html">Programs</a></div>
+                <div class="nav-item"><a href="news.html">News</a></div>
+                <div class="nav-item"><a href="admissions.html">Admissions</a></div>
+                <div class="nav-item"><a href="contact.html" class="contact-btn">Contact Us</a></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Programs - University of Birmingham Dubai</h1>
+
+        <div class="program">
+            <img src="images/download (3).jpeg" alt="Computer Science">
+            <h2>Bachelor of Science in Computer Science</h2>
+            <p>The Bachelor of Science in Computer Science program at the University of Birmingham Dubai provides students with a comprehensive understanding of computer science principles and their applications in various fields. Students will learn programming languages, algorithms, data structures, software engineering, and more.</p>
+            <p><strong>Requirements:</strong> High school diploma or equivalent</p>
+            <p><strong>Prerequisites:</strong> Mathematics, Physics</p>
+        </div>
+
+        <div class="program">
+            <img src="images/Biz-Admin-hub-750x350-1.jpg" alt="Business Administration">
+            <h2>Bachelor of Business Administration</h2>
+            <p>The Bachelor of Business Administration program at the University of Birmingham Dubai offers students a broad understanding of business principles and practices. Students will study areas such as accounting, finance, marketing, management, and business law, preparing them for diverse career opportunities in the business world.</p>
+            <p><strong>Requirements:</strong> High school diploma or equivalent</p>
+            <p><strong>Prerequisites:</strong> None</p>
+        </div>
+
+        <div class="program">
+            <img src="images/about-us-Cropped-720x375.jpg" alt="English Literature">
+            <h2>Bachelor of Arts in English Literature</h2>
+            <p>The Bachelor of Arts in English Literature program at the University of Birmingham Dubai focuses on the study of literary texts from various periods and cultures. Students will analyze novels, plays, poetry, and other forms of literature, developing critical thinking and communication skills.</p>
+            <p><strong>Requirements:</strong> High school diploma or equivalent</p>
+            <p><strong>Prerequisites:</strong> English Language</p>
+        </div>
+
+        <div class="program">
+            <img src="images/1659735184363.jpeg" alt="Civil Engineering">
+            <h2>Bachelor of Engineering in Civil Engineering</h2>
+            <p>The Bachelor of Engineering in Civil Engineering program at the University of Birmingham Dubai provides students with a comprehensive understanding of civil engineering principles and their applications in various infrastructure projects. Students will study structural engineering, transportation engineering, environmental engineering, and more.</p>
+            <p><strong>Requirements:</strong> High school diploma or equivalent</p>
+            <p><strong>Prerequisites:</strong> Mathematics, Physics</p>
+        </div>
+    </div>
+</body>
+</html>
