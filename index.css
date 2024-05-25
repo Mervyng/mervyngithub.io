@@ -1,0 +1,296 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Header Section */
+header {
+    background-color: #003b71;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+.nav-links li a {
+    color: #fff;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.contact-btn {
+    background-color: #ffd200;
+    color: #003b71;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.menu-toggle img {
+    width: 30px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.btn-apply {
+    background-color: #ffd200;
+    color: #003b71;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Student Experience Section */
+.student-experience {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.student-experience .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.student-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.student-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.student-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.student-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.btn-apply {
+    display: inline-block;
+    background-color: #003b71;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Application Video Section */
+.application-video {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.application-video .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-content {
+    max-width: 500px;
+    text-align: left;
+}
+
+.video-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.video-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.video-wrapper video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Faculty Section */
+.faculty {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.faculty .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.faculty-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.faculty-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.faculty-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.faculty-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+/* Footer Section */
+footer {
+    background-color: #003b71;
+    color: #fff;
+    padding: 50px 0;
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-logo p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.footer-links h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 5px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.footer-newsletter h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-newsletter form {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.footer-newsletter button {
+    padding: 10px;
+    background-color: #ffd200;
+}
+   
