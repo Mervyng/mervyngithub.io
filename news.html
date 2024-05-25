@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Birmingham Dubai - News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: #00457C;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            color: #00457C;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .news-item {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .news-item h4 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .news-item p {
+            color: #666;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #00457C;
+            padding: 10px 20px;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .menu-toggle img {
+            height: 30px;
+        }
+
+        .nav-items {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-item a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-item a:hover {
+            background-color: #002A50;
+            border-radius: 5px;
+        }
+
+        .contact-btn {
+            background-color: #FFCC00;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .contact-btn:hover {
+            background-color: #CC9900;
+        }
+
+        @media (max-width: 768px) {
+            .nav-items {
+                display: none;
+                flex-direction: column;
+                gap: 0;
+                background-color: #00457C;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+            }
+
+            .nav-items.active {
+                display: flex;
+            }
+
+            .nav-item {
+                text-align: center;
+                padding: 10px 0;
+                border-top: 1px solid #002A50;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="images/default-logo.png" alt="University of Birmingham Dubai Logo">
+                </a>
+            </div>
+            <button class="menu-toggle" aria-label="Menu Toggle">
+                <img src="images/images.png" alt="Menu">
+            </button>
+            <div class="nav-items">
+                <div class="nav-item"><a href="index.html">Home</a></div>
+                <div class="nav-item"><a href="about.html">About Us</a></div>
+                <div class="nav-item"><a href="programs.html">Programs</a></div>
+                <div class="nav-item"><a href="news.html">News</a></div>
+                <div class="nav-item"><a href="admissions.html">Admissions</a></div>
+                <div class="nav-item"><a href="contact.html" class="contact-btn">Contact Us</a></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="news">
+        <div class="container">
+            <h2>University of Birmingham Dubai - Latest News</h2>
+
+            <h3>Academic Excellence</h3>
+            <div class="news-items">
+                <div class="news-item">
+                    <h4>Research Team at University of Birmingham Dubai Discovers New Method for Solar Energy Storage</h4>
+                    <p>A team of researchers at University of Birmingham Dubai has discovered a groundbreaking method for storing solar energy more efficiently, potentially revolutionizing the renewable energy industry.</p>
+                </div>
+                <div class="news-item">
+                    <h4>University of Birmingham Dubai Professor Receives Prestigious Award for Outstanding Contributions to Physics</h4>
+                    <p>Dr. Sarah Smith, a professor of Physics at University of Birmingham Dubai, has been honored with the Nobel Prize in Physics for her exceptional contributions to the field of quantum mechanics.</p>
+                </div>
+            </div>
+
+            <h3>Student Achievements</h3>
+            <div class="news-items">
+                <div class="news-item">
+                    <h4>University of Birmingham Dubai Students Win International Robotics Competition</h4>
+                    <p>A team of students from University of Birmingham Dubai emerged victorious in the International Robotics Championship held in Singapore, showcasing their innovative designs and problem-solving skills.</p>
+                </div>
+                <div class="news-item">
+                    <h4>Student Entrepreneur from University of Birmingham Dubai Launches Successful Tech Startup</h4>
+                    <p>John Doe, a student at University of Birmingham Dubai, has launched a tech startup called TechGenius, which has gained widespread acclaim for its innovative products and services.</p>
+                </div>
+            </div>
+
+            <h3>Campus Developments</h3>
+            <div class="news-items">
+                <div class="news-item">
+                    <h4>University of Birmingham Dubai Announces Plans for New Research Center</h4>
+                    <p>University of Birmingham Dubai has unveiled plans for the construction of a state-of-the-art research center, which will serve as a hub for groundbreaking research across various disciplines.</p>
+                </div>
+                <div class="news-item">
+                    <h4>Expansion of University of Birmingham Dubai Campus Nears Completion</h4>
+                    <p>The ongoing expansion project at University of Birmingham Dubai campus is nearing completion, with new facilities and amenities set to enhance the learning experience for students.</p>
+                </div>
+            </div>
+
+            <h3>Community Engagement</h3>
+            <div class="news-items">
+                <div class="news-item">
+                    <h4>University of Birmingham Dubai Partners with Local NGOs for Environmental Conservation Campaign</h4>
+                    <p>University of Birmingham Dubai has partnered with several local NGOs to launch a community-wide campaign aimed at raising awareness about environmental conservation and sustainability.</p>
+                </div>
+                <div class="news-item">
+                    <h4>University of Birmingham Dubai Hosts Annual Cultural Festival</h4>
+                    <p>University of Birmingham Dubai recently hosted its annual cultural festival, featuring performances, exhibitions, and workshops celebrating the diverse cultures represented within the university community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
